@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: c2it
+Version: 0.0.4
+Summary: C2IT (See to IT) implementation in Python
+Home-page: https://github.com/promouseus/C2IT
+Author: 00010110 B.V.
+Author-email: input@00010110.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/promouseus/C2IT/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# C2IT agent
+This is the C2IT agent written in Python
+
+
+## Development notes:
+
+```bash
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+source .venv/bin/activate
+python3 -m build
+python3 -m twine upload --repository testpypi dist/*
+
+docker run -it --entrypoint bash python:3.5.10-slim
+```
+
+## Run from source dir
+```bash
+src/
+python -m c2it.agent
+```
+
+

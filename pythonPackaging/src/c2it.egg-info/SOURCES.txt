@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/c2it/__init__.py
+src/c2it/agent.py
+src/c2it.egg-info/PKG-INFO
+src/c2it.egg-info/SOURCES.txt
+src/c2it.egg-info/dependency_links.txt
+src/c2it.egg-info/top_level.txt

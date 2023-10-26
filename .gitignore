@@ -1,5 +1,16 @@
 # Mac
 .DS_Store
 
-# Remove jArchi example scripts
+# Remove jArchi example scripts & ArchiMate models
 /jArchi/examples
+/ModelExchange
+
+# Python venv
+.venv/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Pyhton PIP distribution files
+pythonPackaging/dist
