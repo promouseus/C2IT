@@ -5,12 +5,12 @@
 /jArchi/examples
 /ModelExchange
 
-# Python venv
-.venv/*
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 
 # Pyhton PIP distribution files
 pythonPackaging/dist
+
+# Services temp folder holding test certs
+/services/webhosting/md/
