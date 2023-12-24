@@ -1,4 +1,5 @@
 FROM httpd:alpine
+VOLUME /usr/local/apache2/md
 
 COPY httpd-ssl.conf conf/extra/httpd-ssl.conf
 COPY httpd.conf conf/httpd.conf
@@ -24,3 +25,4 @@ RUN apk --no-cache add python3
 #    echo 'www-data ALL=(root) NOPASSWD: /usr/local/apache2/bin/apachectl graceful' >> /etc/sudoers.d/apachectl
 
 EXPOSE 443
+# FROM image also EXPOSES 80

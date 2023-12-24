@@ -11,6 +11,3 @@ __pycache__/
 
 # Pyhton PIP distribution files
 pythonPackaging/dist
-
-# Services temp folder holding test certs
-/services/webhosting/md/
