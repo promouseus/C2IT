@@ -32,6 +32,8 @@ class OODALoop:
             newObservations = {}
             self.observation_queue.put(newObservations)
 
+            # TODO: check services/ports are running (like https://docs.chef.io/inspec/resources/#os), see old open-field oldChefCode
+
     def orient(self):
         # Wait for a new observation and then process it
         while self.is_running:
