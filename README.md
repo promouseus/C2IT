@@ -1,6 +1,8 @@
 # C2IT
 C2IT ("See to IT") supports planning, directing, coordinating, and controlling IT infrastructure.
 
+The C2IT model software analyser should answer the question: if we like to do this (entity), which will result in this capacity (consumable) need for a performer, can this be supplied and if not, in what element is the (root)problem located?
+
 ## Command and Control (C2) with C2IT
 
 C2IT stands for Command and Control for IT Infrastructure, utilizing the key principles of Command and Control strategies, where decision-making is centralized and instructions flow from the top down. C2IT extends its application beyond the typical boundaries of an Infrastructure as Code (IaC) tool, offering configuration-as-code capabilities that keep your configuration perpetually at the desired state.
