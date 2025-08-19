@@ -1,6 +1,2 @@
 # Don't add local Mac directory cache files
 **/.DS_Store
-
-# Remove jArchi example scripts & ArchiMate models
-/jArchi/examples
-/ModelExchange

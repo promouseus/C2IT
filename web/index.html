@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>C2IT | H2 + SSE Dashboard</title>
+</head>
+<body>
+  <h1>C2IT Realtime Dashboard</h1>
+
+  <h3>Live Server Messages (SSE)</h3>
+  <pre id="output">Connecting...\n</pre>
+
+  <h3>Send an Action to Server</h3>
+  <button onclick="sendAction()">Send Action</button>
+  <p id="result"></p>
+
+  <script>
+    // Connect to the SSE stream
+    const output = document.getElementById("output");
+    const evtSource = new EventSource("/events");
+
+    evtSource.onmessage = function (e) {
+      output.textContent += e.data + "\n";
+    };
+
+    evtSource.onerror = function () {
+      output.textContent += "SSE error or disconnected.\n";
+    };
+
+    // Handle button press via fetch POST
+    function sendAction() {
+      fetch("/action", { method: "POST" })
+        .then(res => res.text())
+        .then(text => {
+          document.getElementById("result").textContent = "Server responded: " + text;
+        })
+        .catch(err => {
+          document.getElementById("result").textContent = "Error: " + err;
+        });
+    }
+  </script>
+</body>
+</html>
